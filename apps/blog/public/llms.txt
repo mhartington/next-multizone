@@ -1,0 +1,18 @@
+# Prism Blog (LLMs)
+
+Canonical zone URL: /blog
+
+This is the blog zone for Prism.
+
+Important pages:
+- /blog
+- /blog/index
+- /blog/posts/hello-multizone
+- /blog/posts/advanced-routing
+
+API endpoints:
+- /blog/api/search?q=<query>
+- /blog/api/og?title=<title>&section=<section>
+
+For expanded context, see:
+- /blog/llms-full.txt

@@ -1,0 +1,40 @@
+# Prism Blog (LLMs Full)
+
+## Zone
+- Name: blog
+- Base path: /blog
+- Purpose: Blog content zone for Prism.
+
+## Public routes
+- /blog
+- /blog/index
+- /blog/posts/hello-multizone
+- /blog/posts/advanced-routing
+
+## APIs
+- /blog/api/search
+  - Method: GET
+  - Query params:
+    - q (optional): text search query
+  - Behavior:
+    - Returns JSON with matching blog pages/posts based on title, route, and keywords.
+
+- /blog/api/og
+  - Method: GET
+  - Query params:
+    - title (optional): heading text in generated OG image
+    - section (optional): subheading text in generated OG image
+  - Behavior:
+    - Returns a 1200x630 PNG Open Graph image.
+
+## Metadata and SEO
+- Metadata is configured in the blog app layout and per-page metadata is provided for key pages.
+- Canonical blog homepage URL path: /blog
+- OG image path pattern: /blog/api/og?title=<...>&section=<...>
+
+## Search index scope
+Current blog search includes:
+- Prism Blog (/blog)
+- Blog Index (/blog/index)
+- Hello Multizone (/blog/posts/hello-multizone)
+- Advanced Routing (/blog/posts/advanced-routing)

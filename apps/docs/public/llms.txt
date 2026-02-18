@@ -1,0 +1,19 @@
+# Prism Docs (LLMs)
+
+Canonical zone URL: /docs
+
+This is the documentation zone for Prism.
+
+Important pages:
+- /docs
+- /docs/getting-started
+- /docs/guides/installation
+- /docs/index
+- /docs/aboute
+
+API endpoints:
+- /docs/api/search?q=<query>
+- /docs/api/og?title=<title>&section=<section>
+
+For expanded context, see:
+- /docs/llms-full.txt

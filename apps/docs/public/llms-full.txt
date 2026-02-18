@@ -1,0 +1,42 @@
+# Prism Docs (LLMs Full)
+
+## Zone
+- Name: docs
+- Base path: /docs
+- Purpose: Product documentation zone for Prism.
+
+## Public routes
+- /docs
+- /docs/getting-started
+- /docs/guides/installation
+- /docs/index
+- /docs/aboute
+
+## APIs
+- /docs/api/search
+  - Method: GET
+  - Query params:
+    - q (optional): text search query
+  - Behavior:
+    - Returns JSON with matching docs pages based on title, route, and keywords.
+
+- /docs/api/og
+  - Method: GET
+  - Query params:
+    - title (optional): heading text in generated OG image
+    - section (optional): subheading text in generated OG image
+  - Behavior:
+    - Returns a 1200x630 PNG Open Graph image.
+
+## Metadata and SEO
+- Metadata is configured in the docs app layout and per-page metadata is provided for key pages.
+- Canonical docs homepage URL path: /docs
+- OG image path pattern: /docs/api/og?title=<...>&section=<...>
+
+## Search index scope
+Current docs search includes:
+- Prism Docs (/docs)
+- Getting Started (/docs/getting-started)
+- Installation Guide (/docs/guides/installation)
+- Docs Index (/docs/index)
+- Aboute (/docs/aboute)
