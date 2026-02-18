@@ -19,3 +19,4 @@ yarn-error.log*
 .env*
 # next-agents-md
 .next-docs/
+.vercel

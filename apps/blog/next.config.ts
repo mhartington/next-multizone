@@ -11,7 +11,17 @@ const nextConfig: NextConfig = {
   basePath: "/blog",
   assetPrefix: "/blog-static",
   allowedDevOrigins,
-  transpilePackages: ["@repo/ui"]
+  transpilePackages: ["@repo/ui"],
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/blog",
+        basePath: false,
+        permanent: false
+      }
+    ];
+  }
 };
 
 export default nextConfig;

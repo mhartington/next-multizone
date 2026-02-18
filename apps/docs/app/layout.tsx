@@ -2,7 +2,19 @@ import type { Metadata } from "next";
 import { GlobalNav } from "@repo/ui";
 import "./globals.css";
 
-const docsSiteUrl = process.env.DOCS_SITE_URL ?? "http://localhost:3000";
+function resolveSiteUrl(explicitUrl: string | undefined, localFallback: string) {
+  if (explicitUrl) return explicitUrl;
+
+  const vercelProductionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+  if (vercelProductionUrl) return `https://${vercelProductionUrl}`;
+
+  const vercelPreviewUrl = process.env.VERCEL_URL;
+  if (vercelPreviewUrl) return `https://${vercelPreviewUrl}`;
+
+  return localFallback;
+}
+
+const docsSiteUrl = resolveSiteUrl(process.env.DOCS_SITE_URL, "http://localhost:3001");
 
 export const metadata: Metadata = {
   title: {

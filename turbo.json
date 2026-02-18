@@ -8,6 +8,13 @@
       "outputs": [
         ".next/**",
         "!.next/cache/**"
+      ],
+      "env": [
+        "DOCS_ORIGIN",
+        "BLOG_ORIGIN",
+        "WEB_SITE_URL",
+        "DOCS_SITE_URL",
+        "BLOG_SITE_URL"
       ]
     },
     "dev": {
