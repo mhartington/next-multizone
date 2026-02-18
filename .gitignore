@@ -1,0 +1,21 @@
+# dependencies
+node_modules
+.pnpm-store
+
+# turborepo
+.turbo
+
+# next
+.next
+out
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env
+.env*
+# next-agents-md
+.next-docs/

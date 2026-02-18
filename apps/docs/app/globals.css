@@ -1,0 +1,17 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+  max-width: 900px;
+}
+
+a {
+  color: #0f62fe;
+}
